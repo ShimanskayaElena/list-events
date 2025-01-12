@@ -1,4 +1,4 @@
-# ListEvents
+# List Events
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
 
@@ -40,4 +40,4 @@ Standalone компоненты:
 
 ## Демо версия проекта
 
-Посмотреть то, как всё это выглядит в реальности, можно [Karma](https://karma-runner.github.io).
+Посмотреть то, как всё это выглядит в реальности, можно [Demo](https://karma-runner.github.io).

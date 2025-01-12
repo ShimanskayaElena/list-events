@@ -102,7 +102,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
-             
+
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
@@ -117,6 +117,14 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options" : {
+            "baseHref" : "https://shimanskayaelena.github.io/list-events/",
+            "buildTarget" : "list-events:build:production",
+            "repo": "https://github.com/ShimanskayaElena/list-eventsgit.git"
           }
         }
       }
