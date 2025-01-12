@@ -40,4 +40,4 @@ Standalone компоненты:
 
 ## Демо версия проекта
 
-Посмотреть то, как всё это выглядит в реальности, можно [Demo](https://karma-runner.github.io).
+Посмотреть то, как всё это выглядит в реальности, можно [Demo](https://shimanskayaelena.github.io/list-events/).
