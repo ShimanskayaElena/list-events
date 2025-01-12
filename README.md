@@ -1,27 +1,43 @@
 # ListEvents
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
 
-## Development server
+## Тестовое задание
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Время выполнения: Задание рассчитано на 2-3 часа работы для разработчика уровня мидл.
+Вам предстоит разработать небольшое приложение для управления списком мероприятий. В рамках задания необходимо продемонстрировать знания работы с Angular компонентами, использование сигналов и работу с наследованием компонентов. Также все компоненты должны быть standalone. Вы можете использовать Angular Material для стилизации и удобства работы с интерфейсом.
 
-## Code scaffolding
+Описание:
+Разработать небольшое приложение для управления списком мероприятий. Пользователь должен иметь возможность:
+Просматривать список мероприятий.
+Добавлять новые мероприятия.
+Редактировать существующие мероприятия.
+Удалять мероприятия.
+Детали задания:
+Список мероприятий:
+Каждое мероприятие содержит: название, описание, место проведения и тип мероприятия.
+Список мероприятий должен отображаться в виде таблицы.
+Добавление/редактирование мероприятий:
+Форма для добавления и редактирования мероприятия.
+Использовать наследование компонентов:
+Базовый компонент формы должен содержать общие поля: название, описание, место проведения.
+Создать два компонента-наследника:
+Для спортивных мероприятий добавить поле "Количество участников".
+Для музыкальных мероприятий добавить поле "Жанр музыки".
+Удаление мероприятия:
+Пользователь должен иметь возможность удалять мероприятия из списка.
+Наследование компонентов:
+Создать базовый компонент BaseEventFormComponent, реализующий общую логику для формы.
+Создать два компонента-наследника: SportEventFormComponent и MusicEventFormComponent, которые добавляют специфические поля.
+Сигналы:
+Использовать сигналы Angular для управления состоянием приложения (например, для хранения и обновления списка мероприятий).
+Standalone компоненты:
+Все компоненты должны быть standalone.
+Дополнительная информация:
+Можно использовать компоненты Angular Material для стилизации и удобства работы с интерфейсом.
+Результат:
+Решение необходимо предоставить через репозиторий на GitHub, GitLab или другой удобной платформе для контроля версий.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Демо версия проекта
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Посмотреть то, как всё это выглядит в реальности, можно [Karma](https://karma-runner.github.io).

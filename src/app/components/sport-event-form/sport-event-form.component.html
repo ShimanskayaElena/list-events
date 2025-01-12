@@ -1,0 +1,9 @@
+<div [formGroup]="parentForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Количество участников</mat-label>
+    <input matInput formControlName="participants" type="number" />
+    @if (parentForm.get('participants')?.invalid && parentForm.get('participants')?.touched) {
+      <mat-error> Это поле обязательно. </mat-error>
+    }
+  </mat-form-field>
+</div>

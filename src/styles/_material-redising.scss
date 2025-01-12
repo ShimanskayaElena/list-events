@@ -1,0 +1,43 @@
+.mat-typography.theme {
+
+  // ----------------- MatDialogModule-------------------------------------------
+  .mat-mdc-dialog-content {
+    max-height: 100%;
+    overflow: visible;
+  }
+
+  .mat-mdc-dialog-actions.mat-mdc-dialog-actions-align-end, .mat-mdc-dialog-actions[align=end] {
+    justify-content: center;
+  }
+
+  mat-dialog-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  // ----------------- MatTableModule -----------------------------------------------
+  .mat-mdc-row .mat-mdc-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .mat-mdc-row:hover .mat-mdc-cell {
+    border-color: currentColor;
+  }
+
+  .demo-row-is-hover {
+    visibility: hidden;
+  }
+
+  .mat-mdc-row:hover .demo-row-is-hover {
+    visibility: visible;
+  }
+
+// ---------------- MatFormFieldModule ------------------------------
+  .mat-mdc-form-field {
+    display: flex;
+  }
+}

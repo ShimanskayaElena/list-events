@@ -1,0 +1,9 @@
+<div [formGroup]="parentForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Жанр музыки</mat-label>
+    <input matInput formControlName="genre" />
+    @if (parentForm.get('genre')?.invalid && parentForm.get('genre')?.touched) {
+      <mat-error> Это поле обязательно. </mat-error>
+    }
+  </mat-form-field>
+</div>

@@ -1,0 +1,46 @@
+<form class="form" [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Название</mat-label>
+    <input matInput formControlName="title" />
+    @if (eventForm.get('title')?.invalid && eventForm.get('title')?.touched) {
+      <mat-error> Это поле обязательно. </mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Описание</mat-label>
+    <textarea matInput formControlName="description"></textarea>
+    @if (eventForm.get('description')?.invalid && eventForm.get('description')?.touched) {
+      <mat-error> Это поле обязательно. </mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Место проведения</mat-label>
+    <input matInput formControlName="location" />
+    @if (eventForm.get('location')?.invalid && eventForm.get('location')?.touched) {
+      <mat-error> Это поле обязательно. </mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Тип мероприятия</mat-label>
+    <mat-select formControlName="type">
+      <mat-option value="sport">Спортивное</mat-option>
+      <mat-option value="music">Музыкальное</mat-option>
+    </mat-select>
+    @if (eventForm.get('type')?.invalid && eventForm.get('type')?.touched) {
+      <mat-error> Это поле обязательно. </mat-error>
+    }
+  </mat-form-field>
+
+  @if (eventForm && eventForm.get('type')?.value === 'music') {
+    <app-music-event-form [parentForm]="eventForm"></app-music-event-form>
+  }
+
+  @if (eventForm && eventForm.get('type')?.value === 'sport') {
+    <app-sport-event-form [parentForm]="eventForm"></app-sport-event-form>
+  }
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="eventForm.invalid">Сохранить</button>
+</form>
