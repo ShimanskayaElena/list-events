@@ -124,7 +124,7 @@
           "options" : {
             "baseHref" : "https://shimanskayaelena.github.io/list-events/",
             "buildTarget" : "list-events:build:production",
-            "repo": "https://github.com/ShimanskayaElena/list-eventsgit.git"
+            "repo": "https://github.com/ShimanskayaElena/list-events.git"
           }
         }
       }
